@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.searchCardContainer {
+  background-color: #edf2f5;
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem;
+}
+.scrollSearch {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0.5rem;
+}
+.scrollCard {
+  background-color: lightgreen;
+  width: 250px;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 1rem;
+  transition: 0.5s ease-in-out;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.scrollCard:hover {
+  transform: scale(1.1);
+}
+.scrollCard .para {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.scrollCard img {
+  width: 100%;
+  height: auto;
+  min-height: 380px;
+  object-fit: cover;
+  z-index: 1;
+}
+.showMore-btn {
+  padding: 1rem;
+  background: red;
+  width: 20%;
+  margin: 0 auto 1rem;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+.showMore-btn:active {
+  border: none;
+  outline: none;
+  background-color: orange;
+}
+
+@media only screen and(max-width:600px) {
+  .scrollCard {
+    width: 100px;
+    height: 50px;
+  }
+}

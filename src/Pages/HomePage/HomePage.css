@@ -1,0 +1,15 @@
+/* .slider {
+  display: flex;
+  align-items: flex-end;
+} */
+
+/* .slick-slide > .container {
+  transform: scale(0.5);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.slick-center > .container {
+  transform: scale(1);
+} */
+.slider {
+  display: flex;
+}

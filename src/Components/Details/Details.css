@@ -1,0 +1,145 @@
+.details {
+  background-color: #edf2f5;
+  padding-bottom: 2rem;
+  margin-top: 4rem;
+}
+.reactPlayer {
+  aspect-ratio: 16/9;
+  margin: 0 3rem;
+}
+.detailsTitle {
+  margin: 1rem 0;
+  text-align: center;
+  color: #004369;
+}
+
+.overRating {
+  display: flex;
+  flex-direction: column;
+}
+.posterAndDesc {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 3rem;
+}
+.posterAndDesc img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 1rem 0;
+}
+.overview {
+  max-width: 800px;
+  font-size: 1.5rem;
+}
+.rtg {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: fit-content;
+
+  padding: 0.1rem 0.5rem;
+  background-color: #00c213;
+}
+.rtg img {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+}
+.rtg p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  margin-left: 0.5rem;
+}
+.red {
+  background-color: #ff3d3d;
+}
+.orange {
+  background-color: #ff8515;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+.actorsCard {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+.aTitle {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 3rem;
+}
+.cast {
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.cast::-webkit-scrollbar {
+  display: none;
+}
+.cards {
+  min-width: 150px;
+
+  background-color: limegreen;
+
+  border-radius: 20px;
+  margin: 5rem 0.5rem;
+  position: relative;
+}
+.cards:nth-child(1) {
+  margin-left: 3rem;
+}
+.cards:nth-last-child(1) {
+  margin-right: 3rem;
+}
+.cards img {
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+.nameAndChar {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 100;
+  max-width: 90%;
+}
+
+@media only screen and (max-width: 600px) {
+  .posterAndDesc {
+    flex-direction: column;
+  }
+
+  .details {
+    font-size: 1rem;
+  }
+  .detailsTitle {
+    font-size: 0.9rem;
+  }
+  .overview {
+    font-size: 1rem;
+  }
+  .tagline {
+    font-size: 0.8rem;
+  }
+  .rtg {
+    padding: 0.05rem 0.8rem;
+  }
+  .rtg img {
+    height: 10px;
+    width: 10px;
+  }
+  .rtg p {
+    font-size: 0.8rem;
+  }
+}

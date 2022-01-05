@@ -1,0 +1,57 @@
+.mainClass {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.753);
+
+  z-index: 1000;
+}
+.subClass {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  aspect-ratio: 16/9;
+  width: 80vw;
+  padding: 2rem;
+  background-color: gray;
+}
+.cross {
+  position: absolute;
+  top: 1%;
+  right: 1%;
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+.cross img {
+  height: 20px;
+  width: 20px;
+  object-fit: cover;
+  color: white;
+}
+/* @media only screen and(max-width:800px) {
+  .subClass {
+    position: absolute;
+    top: 42%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    aspect-ratio: 15/9;
+    width: 89vw;
+  }
+} */
+
+@media only screen and(max-width:600px) {
+  .subClass {
+    padding: 0.5rem;
+    aspect-ratio: 16/9;
+    width: 100vw;
+  }
+  .cross img {
+    height: 20px;
+    width: 20px;
+    object-fit: cover;
+  }
+}
